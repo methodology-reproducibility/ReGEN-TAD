@@ -1,11 +1,3 @@
-"""
-Self-contained fork of ReGENTAD.py.
-
-The numeric detector logic is copied from the original implementation and left
-unchanged. Added methods provide optional semantic interpretation via an LLM
-API, with Groq as the primary provider flow.
-"""
-
 import json
 import math
 import numpy as np
