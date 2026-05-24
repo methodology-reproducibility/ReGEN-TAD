@@ -1,3 +1,10 @@
+"""
+Self-contained fork of ReGENTAD.py.
+
+The numeric detector logic is copied from the original implementation and left
+unchanged. Added methods provide optional semantic interpretation via an LLM
+API, with Groq as the primary provider flow.
+"""
 
 import json
 import math
@@ -1858,7 +1865,6 @@ class ReGENTAD:
         return contrib
 
 
-""" 
 ReGENTAD_C = ReGENTAD
 
 
@@ -1869,7 +1875,6 @@ if __name__ == "__main__":
         past_len=20,
         horizon=5,
         n_features=3,
-        groq_api_key="YOUR_GROQ_API_KEY",
         llm_model="llama-3.3-70b-versatile",
     )
 
@@ -1879,6 +1884,4 @@ if __name__ == "__main__":
     print(
         "results = model.predict_with_context("
         "X_test, Y_test, context_text='Plain-text operating context goes here.')"
-    ) 
-    
-"""
+    )
