@@ -31,8 +31,6 @@ anonymous-repository/
 │   ├── synthetic_stocks_simulations_final_revised.py
 │   ├── synthetic_structural_simulations_final_revised.py
 │   └── hyperparam_sensitivity_revised.py
-│
-└── results/
 ```
 
 ## Installation
@@ -71,11 +69,6 @@ The main experimental scripts are organized as follows:
 - `competitors/`: benchmark and baseline anomaly detection implementations.
 - `ReGENTAD.py`: main ReGENTAD implementation and optional semantic interpretation support.
 
-Generated tables, checkpoints, logs, and figures should be saved under:
-
-```text
-results/
-```
 
 ## Data
 
